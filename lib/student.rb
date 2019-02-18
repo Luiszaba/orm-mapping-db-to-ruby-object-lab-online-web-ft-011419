@@ -62,7 +62,6 @@ class Student
   
   def self.all
     DB[:conn].execute("SELECT * FROM students")
-    self.new_from_db(row)
   end
 end
   
