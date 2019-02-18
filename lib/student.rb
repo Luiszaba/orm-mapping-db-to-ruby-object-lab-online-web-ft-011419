@@ -59,6 +59,14 @@ class Student
     row = DB[:conn].execute("SELECT * FROM students WHERE grade = 10 LIMIT 1").first 
     self.new_from_db(row)
   end
+  
+  def self.all(x
+    DB[:conn].execute("SELECT * FROM students")
+  
+  
+  
+  
+  
 end
 
 
