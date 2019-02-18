@@ -65,8 +65,8 @@ class Student
     {|row| self.new_from_db(row)}
   end
   
-  def self.all_students_in_grade_X(x)
-    DB[:conn].execute("SELECT * FROM students WHERE grade = ?", x).collect {|row| self.new_from_db(row)}
+  def self.all_students_in_grade_X(integer)
+    DB[:conn].execute("SELECT * FROM students WHERE grade = ?", integer).collect {|row| self.new_from_db(row)}
   end
 end
 
