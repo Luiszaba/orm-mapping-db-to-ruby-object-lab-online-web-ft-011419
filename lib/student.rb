@@ -69,6 +69,5 @@ class Student
     DB[:conn].execute("SELECT * FROM students WHERE grade = ?", X).collect {|row| self.new_from_db(row)}
   end
 end
-end
 
 
