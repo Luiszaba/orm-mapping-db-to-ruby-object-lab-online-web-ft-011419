@@ -64,11 +64,6 @@ class Student
     DB[:conn].execute("SELECT * FROM students").collect {|row| self.new_from_db(row)}
   end
 end
-  
-  
-  
-  
-  
-end
+
 
 
