@@ -52,6 +52,6 @@ class Student
   end
   
   def self.first_x_student_in_grade_10(num)
-    DB[:conn].execute("SELECT * FROM students WHERE grade = 10 LIMIT ?",  ).collect {|rows| self.new_from_db(num)} 
+    DB[:conn].execute("SELECT * FROM students WHERE grade = 10 LIMIT ?", num ).collect {|rows| self.new_from_db(num)} 
   end
 end
