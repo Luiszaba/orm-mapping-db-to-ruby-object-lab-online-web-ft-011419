@@ -51,8 +51,7 @@ class Student
     DB[:conn].execute("SELECT * FROM students WHERE grade < 12").collect {|row| self.new_from_db(row)}
   end
   
-  def self.all 
-    DB[:conn]
+  def self.students
   end
   
   
