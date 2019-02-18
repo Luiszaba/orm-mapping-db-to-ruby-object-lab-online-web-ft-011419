@@ -54,14 +54,4 @@ class Student
   def self.first_x_student_in_grade_10
     DB[:conn].execute("SELECT * FROM students WHERE grade = 10 LIMIT ?", num ).collect {|rows| self.new_from_db(row)} 
   end
-end  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-
+end
